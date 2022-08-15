@@ -1,0 +1,25 @@
+@font-face {
+  font-family: norse;
+  src: url(./assets/Norse-Bold.otf);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+
+}
+
+.left {
+  max-height: 100vh;
+  width: 40%;
+  background-image: url(./assets/johny-goerend-northern-lights.jpg);
+  background-size: 640px 960px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.right {
+  width: 60%;
+  background-color: gray;
+}
