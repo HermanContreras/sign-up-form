@@ -10,11 +10,64 @@
 <body>
   <!-- left-hand side -->
   <div class="left">
-
+    <div class="title-wrapper">
+      <img class="odin-logo"src="./assets/odin-lined.png" alt="Odin Logo">
+      <h1 class="odin-title">Odin</h1>
+    </div>
+    <div class="credit">
+      Photo by <a href="https://unsplash.com/@johnygoerend">Johny Goerend</a> on <a href="https://unsplash.com/">Unsplash</a>
+    </div>
   </div>
   <!-- right-hand side-->
   <div class="right">
-
+    <div class="info">
+      <p>This is not a real online service! You know you need something
+        like this in your life to help you realize your deepest dreams.
+        Sign up now to get started.</p>
+      <p class="primaryPara">You know you want to.</p>
+    </div>
+    <div class="form-wrapper">
+      <p class="formPara">Let's do this!</p>
+      <form id="form" action="#" method="post">
+        <div class="nameRow">
+          <div class="stack">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" name="firstName" id="firstName">
+          </div>
+          <div>
+            <label for="lastName">LAST NAME</label>
+            <input type="text" name="lastName" id="lastName">
+          </div>
+        </div>
+        <div class="contactRow">
+          <div class="stack">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                   title="Phone number should be in format 000-000-0000" 
+                   required>
+          </div>
+        </div>
+        <div class="passwordRow">
+          <div class="stack">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div>
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="account">
+      <button type="generic" form="form">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
   </div>
 </body>
 </html>
